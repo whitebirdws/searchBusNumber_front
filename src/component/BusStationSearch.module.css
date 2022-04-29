@@ -1,0 +1,119 @@
+.busStationSearch {
+  width: 100%;
+  height: 670px;
+  background-color: #fbfbfb;
+  border-top: 1px solid #f9f8f8;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.busStationSearch_viewContainer {
+  width: 1386px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  opacity: 1;
+  border-radius: 15px;
+}
+@media (max-width: 1600px) {
+  .busStationSearch_viewContainer {
+    width: 90%;
+  }
+}
+/* .busStationSearch_titleSection {
+  width: 1200px;
+  margin: 30px auto;
+  display: flex; */
+/* justify-content: center; */
+/* } */
+.busStationSearch_title {
+  color: #222;
+  margin-left: 20px;
+
+  padding-top: 20px;
+}
+.busStationSearch_line {
+  height: 0.5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #333;
+}
+
+.busStationSearch_inputSection {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 50px;
+  margin: 20px auto;
+
+  align-items: center;
+  background-color: #0b8e40;
+  border: 2px solid #d8e0ff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+@media (max-width: 1600px) {
+  .busStationSearch_inputSection {
+    width: 90%;
+  }
+}
+.busStationSearch_input {
+  margin-left: 50px;
+  margin-right: 5px;
+  width: 60px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: #0b8e40;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.busStationSearch_input::placeholder {
+  color: #d8e0ff;
+  text-align: center;
+}
+.SearchBusNumberIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+span {
+  color: rgb(150, 144, 144);
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 60%;
+  line-height: 30px;
+}
+.busStationSearch_container {
+  width: 386px;
+  margin: 30px auto;
+}
+.BusScheduleSection {
+  margin-left: 100px;
+}
+.searchResult {
+  /* background-color: #444653; */
+  padding: 10px;
+  height: 300px;
+
+  overflow-y: scroll;
+}
+.searchResult::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #0b8e40;
+  border-radius: 10px;
+}
+.searchResult::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: #d9d9d9;
+}
+.searchResult::-webkit-scrollbar-button {
+  width: 10px;
+  height: 10px;
+}

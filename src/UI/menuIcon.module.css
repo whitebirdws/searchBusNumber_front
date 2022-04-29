@@ -1,0 +1,13 @@
+.busStationMenu_menuLayout_icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.busStationMenu_menuLayout_icon:hover {
+  color: rgb(255, 255, 255);
+}

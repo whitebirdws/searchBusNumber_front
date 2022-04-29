@@ -1,0 +1,271 @@
+.busSchedule_view_section thead td {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #ffffff;
+  background-color: #0b8e40;
+}
+.busSchedule_view_section tbody {
+  margin-top: 10px;
+}
+.busSchedule_view_section tbody td {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  color: #686666;
+  border: 1px solid #ccc;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 968px) {
+  .busSchedule_view_section thead td {
+    font-size: 0.5em;
+    height: 50px;
+  }
+  .busSchedule_view_section tbody td {
+    font-size: 0.7em;
+  }
+}
+.busSchedule {
+  width: 100%;
+  height: 935px;
+  background-color: #fbfbfb;
+}
+
+.busSchedule_container {
+  width: 1386px;
+  height: 840px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0px auto 0;
+  box-sizing: border-box;
+  color: #222;
+}
+@media (max-width: 1600px) {
+  .busSchedule_container {
+    width: 95%;
+  }
+}
+
+.busSchedule_view_section_subLayout {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 1200px;
+  height: 200px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+@media (max-width: 1600px) {
+  .busSchedule_view_section_subLayout {
+    width: 100%;
+  }
+}
+.busSchedule_title_section {
+  padding: 10px;
+}
+.busSchedule_title {
+  color: #222;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.busSchedule_line {
+  height: 0.5px;
+  margin-top: 10px;
+  background-color: #333;
+}
+
+.busSchedule_manageSection {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+@media (max-width: 1600px) {
+  .busSchedule_manageSection {
+    width: 100%;
+  }
+}
+@media (max-width: 968px) {
+  .busSchedule_manageSection {
+    margin-top: -100px;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+.busSchedule_manageSection_predict_Infromation {
+  margin: 20px auto 0;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .busSchedule_manageSection_predict_Infromation {
+    margin: 0px auto;
+    width: 400px;
+  }
+}
+.busSchedule_manageSection .noticeInformationLayout ul {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.busSchedule_manageSection .noticeInformationLayout ul li {
+  width: 100%;
+  height: 50px;
+  color: #686666;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .busSchedule_manageSection .noticeInformationLayout {
+    width: 100%;
+    font-size: 0.7em;
+  }
+}
+.busSchedule_manageSection .noticeInformationLayout ul:nth-child(1) li {
+  background-color: #0b8e40;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.busSchedule_manageSection .noticeInformationLayout ul:nth-child(2) li {
+  background-color: #fff;
+}
+.busSchedule_manageSection .arriveInformationList ul {
+  display: flex;
+}
+.busSchedule_manageSection .arriveInformationList ul li {
+  width: 300px;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: #686666;
+  border: 1px solid #ccc;
+
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .busSchedule_manageSection .arriveInformationList {
+    width: 100%;
+  }
+  .busSchedule_manageSection .arriveInformationList ul li {
+    font-size: 0.7em;
+  }
+}
+.busSchedule_manageSection .arriveInformationList ul:nth-child(1) li {
+  background-color: #0b8e40;
+  color: #fff;
+}
+.busSchedule_manageSection .arriveInformationList ul:nth-child(2) li {
+  background-color: #fff;
+  height: 100px;
+  color: #686666;
+}
+
+.busSchedule_manageSection .secondArriveInformationList ul {
+  display: flex;
+}
+.busSchedule_manageSection .secondArriveInformationList ul li {
+  width: 300px;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: #686666;
+  border: 1px solid #ccc;
+
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .busSchedule_manageSection .secondArriveInformationList {
+    width: 100%;
+  }
+  .busSchedule_manageSection .secondArriveInformationList ul li {
+    width: 50%;
+    font-size: 0.7em;
+  }
+}
+.busSchedule_manageSection .secondArriveInformationList ul:nth-child(1) li {
+  background-color: #0b8e40;
+  color: #fff;
+}
+.busSchedule_manageSection .secondArriveInformationList ul:nth-child(2) li {
+  background-color: #fff;
+  height: 100px;
+  color: #686666;
+}
+
+.busSchedule_manageSection_staionNameList {
+  margin: 20px 10px;
+  width: 350px;
+  height: 450px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+@media (max-width: 1200px) {
+  .busSchedule_manageSection_staionNameList {
+    width: 100%;
+    font-size: 0.7em;
+  }
+}
+
+.busSchedule_manageSection_staionNameList::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #17af54;
+  border-radius: 10px;
+}
+
+.busSchedule_manageSection_staionNameList::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: #e3e3e3;
+}
+.busSchedule_manageSection_staionNameList::-webkit-scrollbar-button {
+  width: 10px;
+  height: 10px;
+}
+.staionNameList_stationName {
+  width: 100px;
+  line-height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0b8e40;
+}
+.staionNameList_stationName:hover {
+  background-color: #0e9f48;
+}
+.busSchedule_bar {
+  margin: 0px auto;
+  width: 2px;
+  height: 30px;
+  background-color: #0b8e40;
+}
+.plateNo1 {
+  margin: 5px auto;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0b8e40;
+  border-radius: 15px;
+}
