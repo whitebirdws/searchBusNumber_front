@@ -39,7 +39,7 @@
 .busSchedule_container {
   width: 1386px;
   height: 840px;
-  background-color: #fff;
+  background-color: rgb(253, 253, 253);
   border-radius: 15px;
   margin: 0px auto 0;
   box-sizing: border-box;
@@ -84,7 +84,7 @@
 .busSchedule_manageSection {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 1200px;
   height: 500px;
   margin: 0 auto;
@@ -110,16 +110,24 @@
 }
 @media (max-width: 1200px) {
   .busSchedule_manageSection_predict_Infromation {
-    margin: 0px auto;
     width: 400px;
+    margin: 0px auto;
   }
 }
+@media (max-width: 450px) {
+  .busSchedule_manageSection_predict_Infromation {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+
 .busSchedule_manageSection .noticeInformationLayout ul {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
 }
+
 .busSchedule_manageSection .noticeInformationLayout ul li {
   width: 100%;
   height: 50px;
@@ -136,6 +144,12 @@
     font-size: 0.7em;
   }
 }
+@media (max-width: 450px) {
+  .busSchedule_manageSection .noticeInformationLayout ul {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
 .busSchedule_manageSection .noticeInformationLayout ul:nth-child(1) li {
   background-color: #0b8e40;
   font-size: 1.2em;
@@ -145,6 +159,7 @@
 .busSchedule_manageSection .noticeInformationLayout ul:nth-child(2) li {
   background-color: #fff;
 }
+
 .busSchedule_manageSection .arriveInformationList ul {
   display: flex;
 }
@@ -196,6 +211,20 @@
   .busSchedule_manageSection .secondArriveInformationList ul li {
     width: 50%;
     font-size: 0.7em;
+  }
+}
+@media (max-width: 450px) {
+  .busSchedule_manageSection .arriveInformationList ul {
+    justify-content: center;
+  }
+  .busSchedule_manageSection .arriveInformationList ul li {
+    width: 80px;
+  }
+  .busSchedule_manageSection .secondArriveInformationList ul {
+    justify-content: center;
+  }
+  .busSchedule_manageSection .secondArriveInformationList ul li {
+    width: 80px;
   }
 }
 .busSchedule_manageSection .secondArriveInformationList ul:nth-child(1) li {

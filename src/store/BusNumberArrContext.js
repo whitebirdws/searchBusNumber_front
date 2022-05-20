@@ -12,12 +12,11 @@ const BusNumberArrContext = createContext({
 
 export const BusNumberProvider = ({ children }) => {
   const [busNumberInfo, setBusNumberInfo] = useState([]);
-  // const [filterNum, setFilterNum] = useState([]);
-  // const [filterRegion, setFilterRegion] = useState([]);
+
   const [searchBusNumber, setSearchBusNumber] = useState(null);
 
   const [filterRouteId, setFilterRouteId] = useState(null);
-  // const [searchStationId, setSearchStationId] = useState(null);
+
   const [compresiveInfo, setCompresiveInfo] = useState([]);
 
   const [busStationList, setBusStationList] = useState([]);
@@ -83,7 +82,5 @@ export const BusNumberProvider = ({ children }) => {
     </BusNumberArrContext.Provider>
   );
 };
-
-// const { Consumer: BusNumberConsumer } = BusNumberArrContext; // const BusNumberConsumer= BusNumberArrContext.Consumer와 같습니다.
 
 export default BusNumberArrContext;

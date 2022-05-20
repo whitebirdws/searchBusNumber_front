@@ -91,12 +91,17 @@ span {
 .busStationSearch_container {
   width: 386px;
   margin: 30px auto;
+  background-color: #0b8e40;
+}
+@media (max-width: 450px) {
+  .busStationSearch_container {
+    width: 90%;
+  }
 }
 .BusScheduleSection {
   margin-left: 100px;
 }
 .searchResult {
-  /* background-color: #444653; */
   padding: 10px;
   height: 300px;
 

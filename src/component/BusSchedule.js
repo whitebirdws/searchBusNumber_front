@@ -49,12 +49,6 @@ const BusSchedule = (props) => {
     });
     return result;
   };
-  // const getBusArrivalinformationList = () => {
-  //
-
-  //   return result;
-  // };
-
   return (
     <BusNumberArrContext.Consumer>
       {({ state, func, actions }) => {
@@ -174,7 +168,6 @@ const BusSchedule = (props) => {
                             </p>
                           ) : (
                             ""
-                            // <p className={styles.plateNo1_none}>버스 정보</p>
                           )}
 
                           <p className={styles.busSchedule_bar}></p>
