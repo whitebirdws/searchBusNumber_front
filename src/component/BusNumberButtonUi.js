@@ -22,7 +22,7 @@ const BusNumberButtonUi = () => {
                     <td className={styles.busSchedule_thead}>종점 막차시간</td>
                   </tr>
                 </thead>
-                <div></div>
+
                 <tbody>
                   <tr>
                     <>

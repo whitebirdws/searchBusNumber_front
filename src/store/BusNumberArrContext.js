@@ -1,5 +1,4 @@
-import axios from "axios";
-import { createContext, useCallback, useEffect, useRef, useState } from "react";
+import { createContext, useRef, useState } from "react";
 
 const BusNumberArrContext = createContext({
   state: { isLoggedIn: false, busNumber: 20, region: "경기도" },

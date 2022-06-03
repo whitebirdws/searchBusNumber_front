@@ -21,7 +21,7 @@ const BusSchedule = (props) => {
       },
     }).then((res) => {
       let data = res.data.response.msgBody;
-      data == undefined
+      data === undefined
         ? actions.setFilterStationInfo({
             routeId: "도착정보없음",
             stationId: "도착정보없음",

@@ -1,43 +1,70 @@
 .busStation_container {
   display: flex;
   flex-direction: column;
-  background-color: #0b8e40;
-}
-@media (max-width: 1800px) {
-  .busStation_container {
-    width: 100%;
-  }
-}
-h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  color: #fff;
-  text-align: center;
+  background-color: #fefefe;
 }
 
 .busStationMenu {
   width: 100%;
   height: 100px;
-  background-color: #454545;
+  background-color: #5bdcc0;
 }
 .busStationMenu .busStationMenu_menuLayout {
   display: flex;
   justify-content: center;
 }
 
-.busStationMenu .busStationMenu_menuLayout li {
+.busStationMenu .busStationMenu_menuLayout > li {
+  position: relative;
   width: 50px;
   height: 50px;
-  margin-left: 50px;
-  background-color: #0b8e40;
-  margin-top: 30px;
-  position: relative;
-  cursor: pointer;
+  background-color: #5bdcc0;
   border-radius: 10px;
-  box-shadow: 0px 3px 2px rgb(3, 10, 51);
+  box-shadow: 0px 3px 2px rgb(183, 191, 236);
+  cursor: pointer;
+  margin-top: 30px;
 }
 
+.busStationMenu_notice > h2 {
+  color: #5bdcc0;
+  font-size: 5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .busStationMenu_notice > h2 {
+    font-size: 4em;
+  }
+}
+@media (max-width: 980px) {
+  .busStationMenu_notice > h2 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 450px) {
+  .busStationMenu_notice > h2 {
+    font-size: 1.2em;
+  }
+}
+.busStationMenu_notice .busStationMenu_timeLayout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #5bdcc0;
+}
+.busStationMenu_timeLayout > li {
+  color: #fff;
+  cursor: pointer;
+  font-size: 5em;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 980px) {
+  .busStationMenu_timeLayout > li {
+    font-size: 2em;
+  }
+}
 .dispalynone {
   display: none;
 }

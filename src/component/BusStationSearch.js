@@ -8,7 +8,8 @@ import axios from "axios";
 
 const BusStationSearch = (props) => {
   const numberRef = useRef(null);
-  let [count, setCount] = useState(0);
+  const searchResultRef = useRef(null);
+
   const [viewer, setViewer] = useState(false);
 
   const searchNum = (actions) => {
@@ -17,19 +18,29 @@ const BusStationSearch = (props) => {
       data: {
         title: numberRef.current.value,
       },
-    }).then((res) => {
-      res.data.response.msgBody.busRouteList.map((v) =>
-        actions.setBusNumberInfo((prev) => [
-          ...prev,
-          {
-            routeId: v.routeId._text,
-            busNum: v.routeName._text,
-            region: v.regionName._text,
-          },
-        ])
-      );
-    });
+    })
+      .then((res) => {
+        res.data.response.msgBody.busRouteList.map((v) =>
+          actions.setBusNumberInfo((prev) => [
+            ...prev,
+            {
+              routeId: v.routeId._text,
+              busNum: v.routeName._text,
+              region: v.regionName._text,
+            },
+          ])
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+        searchResultRef.current.textContent = "찾으시는 번호가 없습니다.";
+        let res = setInterval(() => {
+          searchResultRef.current.textContent = "";
+          window.location.reload();
+        }, 2000);
+      });
 
+    numberRef.current.value = "";
     actions.setBusNumberInfo([]); //초기화를 위해
     return result;
   };
@@ -78,6 +89,7 @@ const BusStationSearch = (props) => {
         ]);
       });
     });
+    return result;
   };
 
   return (
@@ -97,7 +109,7 @@ const BusStationSearch = (props) => {
                       <input
                         className={styles.busStationSearch_input}
                         type="text"
-                        maxLength={6}
+                        maxLength={4}
                         ref={numberRef}
                       />
                       <div className={styles.busStationSearch_desc}>
@@ -106,21 +118,17 @@ const BusStationSearch = (props) => {
                       <MdSearch
                         className={styles.SearchBusNumberIcon}
                         onClick={() => {
-                          // actions.setSearchBusNumber(
-                          //   props.numberRef.current.value
-                          // );
-
                           actions.setBusStationList([{ stationName: "" }]);
-
-                          // window.location.reload();
-                          searchNum(actions);
+                          numberRef.current.value !== ""
+                            ? searchNum(actions)
+                            : alert("버스번호를 입력해주세요");
                         }}
                       />
                     </div>
                   </div>
 
                   <div className={styles.busStationSearch_container}>
-                    <div className={styles.searchResult}>
+                    <div ref={searchResultRef} className={styles.searchResult}>
                       {state.busNumberInfo.map((value, idx) => {
                         return (
                           value.busNum && (
@@ -164,7 +172,6 @@ const BusStationSearch = (props) => {
                                     actions.setFilterRouteId(value.routeId);
                                     comprehensiveOfInfo(value.routeId, actions);
                                     fixBusStationList(value.routeId, actions);
-                                    // state.setFilterRouteId(value.routeId);
                                   }}
                                 >
                                   자세히 보기
