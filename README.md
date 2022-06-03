@@ -1,4 +1,4 @@
-![image2](https://user-images.githubusercontent.com/104630719/166456993-7c85c752-6971-47d2-8305-6041ddd5a759.png)
+![image2](https://user-images.githubusercontent.com/104630719/171780171-4112ad11-368c-4d5d-a8a8-deed7377d2ea.png)
 
 ## □.웹사이트 URL
 
